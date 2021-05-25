@@ -1,0 +1,21 @@
+attendre 3s
+reculer au bord du dohyo
+
+boucle infinie
+    vérifier l'état des capteurs infrarouge (pour savoir si on n'est pas sur le bord)
+    si on est au bord
+        -- procédure d'urgence --
+        scanner (faire tourner les capteurs à 180° jusqu'à trouver le robot adverse)
+        si le robot est dans l'axe du capteur qui a détecté le bord
+            foncer sur le robot adverse pleine puissance
+        sinon
+            manoeuvre d'esquive (aller dans un sens ou dans l'autre pour se dégager)
+        fin si
+    sinon
+        -- procédure de base --
+        scanner (faire tourner les capteurs à 180° jusqu'à trouver le robot adverse)
+        récupérer l'angle du servo-moteur lié au capteur ayant détecté le robot
+        faire tourner le robot de cet angle (pour être en face de l'adversaire)
+        avancer tout droit jusqu'à ce que le robot adverse ne soit plus détecté
+    fin si
+fin boucle
