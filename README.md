@@ -51,7 +51,7 @@ It integrates multiple sensors (infrared, ultrasonic, encoders) and actuators (m
 
 ## License
 
-This project is distributed under the **MIT License**.
+This project is distributed under the **MIT License**, see [LICENSE](LICENSE).
 
 ---
 
